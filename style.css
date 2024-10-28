@@ -1,0 +1,106 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Stone: hsl(30, 54%, 90%);
+  --Stone150: hsl(30, 18%, 87%);
+  --Stone600: hsl(30, 10%, 34%);
+  --Stone900: hsl(24, 5%, 18%);
+
+  --Brown800: hsl(14, 45%, 36%);
+
+  --Rose800: hsl(332, 57%, 15%);
+  --Rose50: hsl(330, 100%, 98%);
+  --font-size: 16px;
+  --Young: "Young Serif", serif;
+  --outfit: "Outfit", system-ui;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--Stone);
+  font-size: 16px;
+  font-family: var(--outfit);
+  font-weight: 400;
+}
+main {
+  margin: 60px 300px;
+  padding: 2rem;
+  background-color: var(--White);
+  border-radius: 2%;
+}
+img {
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 95%;
+  max-height: 100%;
+  object-fit: cover;
+}
+p {
+  font-size: 16px;
+}
+.light-pink {
+  margin: 0 auto;
+  padding: 0.5rem;
+  background-color: var(--Rose50);
+  border-radius: 2%;
+}
+.light-pink h2 {
+  margin: 0;
+  padding: 0;
+  color: var(--Rose800);
+  font-size: 100%;
+}
+h2 {
+  color: var(--Brown800);
+  font-family: var(--Young);
+}
+li::marker {
+  color: var(--Brown800);
+}
+.light-pink li {
+  padding: 0.2rem;
+  margin: 0 0 0 -1.2em;
+  font-size: 80%;
+}
+.bold {
+  font-weight: 700;
+}
+.ingredients ul li {
+  margin: 0 0 0 -1.5em;
+  padding: 0.5rem;
+}
+.instructions ol li {
+  margin: 0 0 0 -1.5em;
+  padding: 0.5rem;
+}
+table {
+  border-collapse: collapse;
+  max-width: 660px;
+  width: 100%;
+}
+.line {
+  border-bottom: 2px solid var(--Stone150);
+}
+.calories {
+  margin: 0 0 1rem 200px;
+  float: left;
+  color: var(--Brown800);
+}
+@media (max-width: 1000px) {
+  main {
+    margin: 30px 60px;
+  }
+}
+@media (max-width: 550px) {
+  body {
+    background-color: var(--White);
+  }
+  main {
+    margin: 1px;
+    padding: 1rem;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
